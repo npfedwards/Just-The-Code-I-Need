@@ -12,11 +12,11 @@ JTCIN lets you decide how many columns you want to use, and what page sizes you 
 	@colwidth: 50; //(@colwidth + @gutter) * @columns is your page width.
 	@gutter: 10; 
 
-	@import "boilerplate"; //Contains the boilerplate code always required
-	@import "columns"; //Contains the columns
-	@import "style"; //Just for your code
+	@import "importthis"//imports reset, columns, boilerplate and style
 
 To remove the columns you won't be using from your final css, open `columns.less` and comment out the columns you don't want (this will permeate all your grids). LESS accepts `\\single line` comments.
+
+Add your own code in `style.less`
 
 ### Compile it
 
